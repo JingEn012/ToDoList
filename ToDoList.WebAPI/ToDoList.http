@@ -1,0 +1,15 @@
+@ToDoList_HostAddress = http://localhost:5143
+
+POST {{ToDoList_HostAddress}}/todo/addItem
+Content-Type: application/json
+
+{
+  "title": "Sleep",
+  "isCompleted": false
+}
+
+###
+
+GET {{ToDoList_HostAddress}}/todo
+
+###
